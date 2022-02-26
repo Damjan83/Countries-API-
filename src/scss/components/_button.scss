@@ -1,0 +1,48 @@
+.btn-search {
+    border: none;
+    padding: 0 0.875rem;
+}
+
+.btn-filter {
+    width: 8.125rem;
+    height: 1.875rem;
+    background-color: white;
+    border: 1px solid map-get($colors , light-mode-input);
+    border-radius: 0.3125rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0.625rem;
+
+
+    &__text {
+        font-size: 0.8125em;
+        padding: 0;
+        margin: 0;
+    }
+
+    &__img {
+        width: 15px;
+        padding: 0;
+        filter: grayscale(0) invert(0);
+    }
+}
+.btn-back {
+    width: 90px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 1px solid map-get($colors , light-mode-input);
+
+    &__text {
+
+    }
+
+    &__img {
+        width: 15px;
+        filter: grayscale(0) invert(0);
+    }
+}

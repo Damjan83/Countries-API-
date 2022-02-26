@@ -1,0 +1,42 @@
+.countries {
+    width: 100%;
+    max-width: 90%;
+    height: auto;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 3.125rem;
+}
+
+.countries__box {
+    width: 21%;
+    height: 320px;
+    list-style: none;
+    border-radius: 0.3125rem;
+    margin-bottom: 3.125rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.countries__box-flags {
+    height: 50%;
+    background-color: lightblue;
+    border-radius: 5px 5px 0 0;
+}
+
+.countries__box-text {
+    height: 50%;
+    margin: 0 1.25rem;
+}
+
+.box-text__country-name {
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.box-text__country-info {
+    margin: 0 0 10px 0;
+    font-size: 0.875rem;
+}

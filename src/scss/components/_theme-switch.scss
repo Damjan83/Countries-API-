@@ -1,0 +1,32 @@
+.switch {
+    display: flex;
+    align-items: center;
+}
+
+.switch__label {
+    display: flex;
+}
+
+.switch__text {
+    font-size: 0.875rem;
+    font-weight: bold;
+}
+
+.moon-img {
+    width: 1.25rem;
+    height: auto;
+    margin-right: 0.625rem;
+    filter: grayscale(0) invert(0);
+}
+
+.switch__label {
+    height: 1.875rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.switch__checkbox {
+    opacity: 0;
+}

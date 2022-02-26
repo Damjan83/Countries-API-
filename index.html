@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/css/main.css">
+    <title>Countries API whit color theme</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header-main">
+            <h1 class="header__title">Where in the world?</h1>
+            <div class="switch">
+                <input type="checkbox" class="switch__checkbox" id="switchCheckbox">
+                    <label for="switchCheckbox" class="switch__label">
+                        <img class="moon-img" src="./dist/assets/images/moon.png" alt="moon">
+                        <p class="switch__text">Dark Mode</p>
+                </label>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="wraper">
+            <div class="container">
+                <div class="search">
+                    <div class="search__search-bar">
+                        <button class="btn-search" type="submit">
+                            <img class="search-img" src="./dist/assets/images/search.png" alt="search">
+                        </button>
+                        <input type="text" placeholder="Search for a country.." name="search" class="search-input">
+                    </div>
+                    <div class="search__filter-bar">
+                        <button class="btn-filter">
+                            <p class="btn-filter__text">Filter by Region</p>
+                            <img class="btn-filter__img" src="./dist/assets/images/down.png" alt="arow down">
+                        </button>
+                        <ul class="search__filter-region">
+                            <li class="search__filter-list"><a href="#"></a>Africa</li>
+                            <li class="search__filter-list"><a href="#"></a>America</li>
+                            <li class="search__filter-list"><a href="#"></a>Asia</li>
+                            <li class="search__filter-list"><a href="#"></a>Europe</li>
+                            <li class="search__filter-list"><a href="#"></a>Oceania</li>
+                        </ul>                       
+                    </div>
+                </div>
+            </div>
+
+            <ul class="countries">
+                <li class="countries__box">
+                        <div class="countries__box-flags"></div>
+                        <div class="countries__box-text">
+                            <p class="box-text__country-name">Country name</p>
+                            <p class="box-text__country-info">Population:</p>
+                            <p class="box-text__country-info">Region:</p>
+                            <p class="box-text__country-info">Capital:</p>
+                        </div>
+                </li>
+                <li class="countries__box">
+                        <div class="countries__box-flags"></div>
+                        <div class="countries__box-text">
+                            <p class="box-text__country-name">Country name</p>
+                            <p class="box-text__country-info">Population:</p>
+                            <p class="box-text__country-info">Region:</p>
+                            <p class="box-text__country-info">Capital:</p>
+                        </div>
+                </li>
+                <li class="countries__box">
+                        <div class="countries__box-flags"></div>
+                        <div class="countries__box-text">
+                            <p class="box-text__country-name">Country name</p>
+                            <p class="box-text__country-info">Population:</p>
+                            <p class="box-text__country-info">Region:</p>
+                            <p class="box-text__country-info">Capital:</p>
+                        </div>
+                </li>
+                <li class="countries__box">
+                        <div class="countries__box-flags"></div>
+                        <div class="countries__box-text">
+                            <p class="box-text__country-name">Country name</p>
+                            <p class="box-text__country-info">Population:</p>
+                            <p class="box-text__country-info">Region:</p>
+                            <p class="box-text__country-info">Capital:</p>
+                        </div>
+                </li>
+                <li class="countries__box">
+                        <div class="countries__box-flags"></div>
+                        <div class="countries__box-text">
+                            <p class="box-text__country-name">Country name</p>
+                            <p class="box-text__country-info">Population:</p>
+                            <p class="box-text__country-info">Region:</p>
+                            <p class="box-text__country-info">Capital:</p>
+                        </div>
+                </li>
+                <li class="countries__box">
+                        <div class="countries__box-flags"></div>
+                        <div class="countries__box-text">
+                            <p class="box-text__country-name">Country name</p>
+                            <p class="box-text__country-info">Population:</p>
+                            <p class="box-text__country-info">Region:</p>
+                            <p class="box-text__country-info">Capital:</p>
+                        </div>
+                </li>
+                <li class="countries__box">
+                        <div class="countries__box-flags"></div>
+                        <div class="countries__box-text">
+                            <p class="box-text__country-name">Country name</p>
+                            <p class="box-text__country-info">Population:</p>
+                            <p class="box-text__country-info">Region:</p>
+                            <p class="box-text__country-info">Capital:</p>
+                        </div>
+                </li>
+                <li class="countries__box">
+                        <div class="countries__box-flags"></div>
+                        <div class="countries__box-text">
+                            <p class="box-text__country-name">Country name</p>
+                            <p class="box-text__country-info">Population:</p>
+                            <p class="box-text__country-info">Region:</p>
+                            <p class="box-text__country-info">Capital:</p>
+                        </div>
+                </li>
+            </ul>       
+            <div class="wraper-modal">
+                <div class="wraper-modal__container">
+                    <button class="btn-back">
+                        <img class="btn-back__img" src="./dist/assets/images/arrow-left.png" alt="arrow left">
+                        <p class="btn-back__text">Back</p>                
+                    </button>
+                    <div class="single-country">
+                        <div class="single-country__flag"></div>
+                        <div class="single-country__info">     
+                            <h4 class="single-country__info-text">Country name</h4>        
+                            <div class="single-country__info-desc">              
+                                <div class="info-desc">
+                                <p class="info-desc__text">Native Name:</p>
+                                <p class="info-desc__text">Population:</p>
+                                <p class="info-desc__text">Region:</p>
+                                <p class="info-desc__text">Sub Region:</p>
+                                <p class="info-desc__text">Capital:</p>
+                                </div>
+                                <div class="info-desc">
+                                <p class="info-desc__text">Top Level Domain:</p>
+                                <p class="info-desc__text">Currencies:</p>
+                                <p class="info-desc__text">Languages:</p>
+                                </div>
+                            </div>
+
+                            <div class="country-borders">
+                                <p class="country-borders__text">Border Countries:</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>        
+        </section>
+    
+    </main>
+    <script src="dist/js/bundle.js"></script>
+</body>
+</html>
+
