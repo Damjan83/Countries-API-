@@ -1,5 +1,5 @@
-const getApi = () => {
-    const endpoint = "https://restcountries.com/v2/all";
+const getApi = (parametar1) => {
+    const endpoint = "https://restcountries.com/v3.1/" + parametar1;
     const request = new XMLHttpRequest();
 
     if(!request) {
@@ -9,7 +9,6 @@ const getApi = () => {
     request.open("GET", endpoint, true);
     request.onload = function() {
         if(this.status >= 200 && this.status < 400) {
-            console.log("ok")
             renderData(JSON.parse(this.response));
         }else {
             console.log("nije ok")
@@ -23,21 +22,22 @@ function renderData(data) {
 
     for(let i = 0; i < data.length; i++) {
         if(data[i]) {
-            console.log(data[i].flags)
             const countriesListItem = document.createElement('li');
             countriesListItem.classList.add('countries__box');
 
-
-            const countryFlag = document.createElement('img');
+            const countryFlag = document.createElement('div');
             countryFlag.classList.add('countries__box-flags');
-            countryFlag.src = data[i].flags.svg;
+
+            const countryFlagImg = document.createElement('img');
+            countryFlagImg.classList.add('countries__box-flags-img');
+            countryFlagImg.src = data[i].flags.svg;
 
             const countryContent = document.createElement('div');
             countryContent.classList.add('countries__box-text');
 
             const countryName = document.createElement('p');
             countryName.classList.add('box-text__country-name', 'js-name');
-            countryName.innerHTML = data[i].name;
+            countryName.innerHTML = data[i].name.official;
             
             const countryPopulation = document.createElement('p');
             countryPopulation.classList.add('box-text__country-info', 'js-population');
@@ -57,15 +57,15 @@ function renderData(data) {
             countryContent.appendChild(countryCapital);
 
             countriesListItem.appendChild(countryFlag);
+            countriesListItem.appendChild(countryFlagImg);
+            countryFlag.appendChild(countryFlagImg);
             countriesListItem.appendChild(countryContent);
             countriesList.appendChild(countriesListItem);
 
         }
     }
 
-    
-
-
 }
+
 
 export default getApi;

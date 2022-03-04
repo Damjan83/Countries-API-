@@ -15,7 +15,7 @@
                     <label for="switchCheckbox" class="switch__label">
                         <img class="moon-img" src="./dist/assets/images/moon.png" alt="moon">
                         <p class="switch__text">Dark Mode</p>
-                </label>
+                    </label>
             </div>
         </div>
     </header>
@@ -24,30 +24,22 @@
             <div class="container">
                 <div class="search">
                     <div class="search__search-bar">
-                        <button class="btn-search" type="submit">
-                            <img class="search-img" src="./dist/assets/images/search.png" alt="search">
-                        </button>
                         <input type="text" placeholder="Search for a country.." name="search" class="search-input">
                     </div>
-                    <div class="search__filter-bar">
-                        <button class="btn-filter">
-                            <p class="btn-filter__text">Filter by Region</p>
-                            <img class="btn-filter__img" src="./dist/assets/images/down.png" alt="arow down">
-                        </button>
-                        <ul class="search__filter-region">
-                            <li class="search__filter-list"><a href="#"></a>Africa</li>
-                            <li class="search__filter-list"><a href="#"></a>America</li>
-                            <li class="search__filter-list"><a href="#"></a>Asia</li>
-                            <li class="search__filter-list"><a href="#"></a>Europe</li>
-                            <li class="search__filter-list"><a href="#"></a>Oceania</li>
-                        </ul>                       
+                    <div class="search__filter-bar">    
+                        <select id="regionId">
+                            <option value="">Filter by Region</option>
+                            <option value="africa">Africa</option>
+                            <option value="america">America</option>
+                            <option value="asia">Asia</option>
+                            <option value="europe">Europe</option>
+                            <option value="oceania">Oceania</option>
+                        </select>                  
                     </div>
                 </div>
             </div>
 
-            <ul class="countries">
-                
-            </ul>       
+            <ul class="countries"></ul>       
             <div class="wraper-modal">
                 <div class="wraper-modal__container">
                     <button class="btn-back">
