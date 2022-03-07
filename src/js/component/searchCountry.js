@@ -1,4 +1,5 @@
 import getApi from "../getApi";
+import renderData from "../utility/renderList";
 
 const searchCountry = () => {
     const searchFild = document.querySelector('.search-input');
@@ -8,11 +9,15 @@ const searchCountry = () => {
     searchFild.addEventListener('input', (e) => {
         const currentEleValue = "name/" + e.target.value.toLowerCase();
         countriesList.innerHTML = '';
+
         if(e.target.value) {
-            getApi(currentEleValue);
+            getApi(currentEleValue, renderData);
         }
-        
-        console.log(currentEleValue)
+
+        if(e.target.value == '') {
+            getApi("all", renderData);
+          
+        }
     });
 };
 

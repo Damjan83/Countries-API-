@@ -1,7 +1,7 @@
 .dark {
 
     .header, .search-input, .btn-search, .btn-filter, .search__filter-region, .countries__box,
-    .wraper-modal, .single-country__flag, .single-country__info, .btn-back {
+    .wraper-modal, .single-country__flag, .single-country__info, .btn-back, .loader {
         background-color: map-get($colors , dark-mode-elements);
     }
 
@@ -10,13 +10,15 @@
         box-shadow: 0px 0px 18px 0px rgba(17, 21, 23, 1);
     }
 
-    .btn-filter__text, .search-input::placeholder, .countries__box-text, .btn-back, select{
+    .btn-filter__text, .search-input::placeholder, .countries__box-text, .search-input, .btn-back, select{
         color: map-get($colors , light-mode-input);
     }
+
 
     .header {
         box-shadow: 0px 20px 21px -14px rgba(17, 21, 23, 1);
     }
+
     .search-img, .btn-filter__img, .moon-img, .btn-back__img, .search__search-bar::before {
         filter: grayscale(1) invert(1);
     }

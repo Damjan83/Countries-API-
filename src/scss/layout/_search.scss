@@ -27,13 +27,15 @@
     }
 }
 
+
 .search-input {
     width: 100%;
     height: 100%;
     border: none;
     padding: 0;
     outline: none;
-    color: map-get($colors , light-mode-ele-dark-text);
+    color: map-get($colors , light-mode-text);
+    background-color: map-get($app-layout, light-mode-background);
 }
 
 .search-img {
@@ -48,6 +50,7 @@ select {
     padding: 5px;
     border-radius: 5px;
     border: 0.0625rem solid map-get($colors , light-mode-input);
+    cursor: pointer;
 }
 
 

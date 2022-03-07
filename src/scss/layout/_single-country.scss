@@ -5,14 +5,21 @@
 
 .single-country__flag, .single-country__info {
     width: 50%;
-    height: 400px;
+    height: 25rem;
     background-color: map-get($app-layout , light-mode-background);
+}
+
+.single-country__flag {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .single-country__info {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-left: 5rem;
 }
 
 .single-country__info-text {

@@ -5,9 +5,8 @@
     margin: 0 auto;
     background-color: map-get($app-layout , light-mode-background);
     display: none;
-    position: absolute;
+    position: fixed;
     top: 0;
-    left: 0;
 }
 
 .single-country {
@@ -15,3 +14,4 @@
     height: 700px;
     
 }
+

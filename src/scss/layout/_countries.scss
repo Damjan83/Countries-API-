@@ -18,12 +18,18 @@
     margin-bottom: 3.125rem;
     display: flex;
     flex-direction: column;
+    cursor: pointer;
 }
 
 .countries__box-flags {
-    height: 50%;
-    background-color: lightblue;
-    border-radius: 5px 5px 0 0;
+    height: 170px;
+}
+
+.countries__box-flags-img {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
 }
 
 .countries__box-text {
