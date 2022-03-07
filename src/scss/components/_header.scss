@@ -7,9 +7,13 @@
 }
 
 .header__title {
-    font-size: 1.25rem;
+    font-size: 1em;
     font-weight: bold;
     letter-spacing: 0.0625rem;
+    
+    @include for-size(phone-large) {
+        font-size: 1.25em;
+    }
 }
 
 .header-main {
@@ -19,4 +23,9 @@
     align-items: center;
     justify-content: space-between;
     margin: 0 auto;
+    border-bottom: 0.0625rem solid map-get($colors , light-mode-input);
+
+    @include for-size(phone-large) {
+        border: none;
+    }
 }

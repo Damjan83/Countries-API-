@@ -23,9 +23,12 @@
         filter: grayscale(1) invert(1);
     }
 
-    .wraper-modal, .search-input, select {
+    .wraper-modal, .search-input, select, .single-country__info {
         background-color: map-get($app-layout , dark-mode-background);
     }
     
+    .header-main {
+        border: none;
+    }
 
 }

@@ -8,8 +8,12 @@
 }
 
 .switch__text {
-    font-size: 0.875rem;
+    font-size: 0.675rem;
     font-weight: bold;
+    
+    @include for-size(phone-large) {
+        font-size: 0.875rem;
+    }
 }
 
 .moon-img {

@@ -1,40 +1,66 @@
 .single-country {
-    display: flex;
+    width: 100%;
+    height: auto;
+    display: block;
     margin-top: 3.75rem;
-}
 
-.single-country__flag, .single-country__info {
-    width: 50%;
-    height: 25rem;
-    background-color: map-get($app-layout , light-mode-background);
-}
-
-.single-country__flag {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    @include for-size(phone-large) {
+        display: flex;
+    }
 }
 
 .single-country__info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-left: 5rem;
+    width: 100%;
+    height: 25rem;
+    background-color: map-get($app-layout , light-mode-background);
+
+    @include for-size(phone-large) {
+        width: 50%;
+    }
 }
 
-.single-country__info-text {
+.single-country__flag {
+    width: 100%;
+    height: 13rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 
+    @include for-size(phone-large) {
+        width: 50%;
+        height: 25rem;
+    }
+}
+
+.single-country__info {
+    display: block;
+    flex-direction: column;
+    justify-content: center;  
+
+    @include for-size(phone-large) {
+        display: flex;
+        padding-left: 3.125rem;
+    }
 }
 
 .single-country__info-desc {
     display: flex;
+    flex-direction: column;
+
+    @include for-size(phone-large) {
+        display: flex;
+    }
 }
 
 .info-desc {
-    width: 50%;
+    width: 100%;
 
     &__text {
         font-size: 0.875rem;
+    }
+
+    @include for-size(phone-large) {
+        width: 50%;
     }
 }
 
