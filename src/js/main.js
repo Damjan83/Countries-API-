@@ -30,7 +30,7 @@ btnBack.addEventListener('click' , ()=> {
 
 
 
- // Kada se obrisu sva slova da se ponovo ispise lista sa zastavama,
+ // Kada se obrisu sva slova da se ponovo ispise lista sa zastavama-
  // Dugme za back da se sredi,-
  // Postaviti kursor za list item, back dugme, select-
  // Napraviti layout za list item 1 do 768, 2 do 992, 3 do 1200, 4 sve preko
