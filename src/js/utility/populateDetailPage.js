@@ -11,8 +11,6 @@ const populateDetailPage = (detail) => {
     const countryLanguages = document.querySelector('.info-desc__text-languages');
     const countryBorders = document.querySelector('.country-borders__text');
 
-    console.log(detail.tld)   
-    console.log(detail.name.nativeName[Object.keys(detail.name.nativeName)[0]].official)
     countryFlag.style.backgroundImage = "url(" + detail.flags.svg + ")";
     countryName.innerHTML += detail.name.official;
     nativeName.innerHTML += detail.name.nativeName[Object.keys(detail.name.nativeName)[0]].official;

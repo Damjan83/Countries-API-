@@ -57,8 +57,6 @@ const renderData = (data) => {
                     loader.style.display = 'none';
                 }, 1000);
                 
-                console.log(data[i])
-                console.log(data[i].name.common.toLowerCase())
             });
         }
     }

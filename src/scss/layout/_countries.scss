@@ -18,7 +18,7 @@
 
 .countries__box {
     width:100%;
-    height: 20rem;
+    height: auto;
     list-style: none;
     border-radius: 0.3125rem;
     display: flex;
@@ -28,7 +28,7 @@
 }
 
 .countries__box-flags {
-    height: 170px;
+    height: 10.625rem;
 }
 
 .countries__box-flags-img {
@@ -46,11 +46,10 @@
 
 .box-text__country-name {
     font-weight: bold;
-    margin: 20px 0;
+    margin: 1.25rem 0;
 }
 
 .box-text__country-info {
     margin: 0 0 10px 0;
     font-size: 0.875rem;
-    font-size: bold;
 }

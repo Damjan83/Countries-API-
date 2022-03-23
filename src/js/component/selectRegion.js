@@ -10,7 +10,6 @@ const getRegion = () => {
         const newFormatedUrl = "region/" + currentEleValue;
         countriesList.innerHTML = '';
         getApi(newFormatedUrl, renderData);
-        console.log(e.target.value);
     });
 };
 
